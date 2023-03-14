@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { createAnExcelSheetWithDummyData } from './experiments/ExcelTest';
+import { createAnExcelSheetWithDummyData } from './Experiments/ExcelTest';
 import { data_excelBasic } from './testData/excelBasic';
 import { data_ExcelBig } from './testData/excelWith15000Cells';
 
