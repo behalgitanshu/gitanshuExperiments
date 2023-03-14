@@ -2,6 +2,13 @@
   padding: 10px;
   height: calc(100vh - 20px);
   background-color:darkslategrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.Button {
+  width: fit-content;
+  margin: 4px;
 }
 
 .App-logo {

@@ -1,7 +1,6 @@
 import * as XLSX from 'xlsx';
-import { data } from './data';
 
-export const createAnExcelSheetWithDummyData = () => {
+export const createAnExcelSheetWithDummyData = (data: unknown[]) => {
   const worksheet = XLSX.utils.json_to_sheet(data);
   const workbook = { Sheets: { data: worksheet }, SheetNames: ['data'] };
   const buffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
